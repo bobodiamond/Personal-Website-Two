@@ -1,0 +1,178 @@
+$primary: #32b9e0;
+$secondary: #134554;
+$basic-font-size: 18px;
+$font-color: #606060;
+$subtle-grey: #d7d8d9;
+
+*{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+	transition: all .4s ease;
+}
+body{
+	font-size: $basic-font-size;
+	color: $font-color;
+	font-family: 'Exo 2', sans-serif;
+	font-weight: 300;
+	width: 100%;
+	max-width: 2000px;
+}
+p{
+	font-weight: 100;
+	line-height: 2em;
+}
+.navigation{
+	color: white;
+	position: relative;
+	height: 50px;
+	overflow: hidden;
+	width: 100%;
+	background-color: $primary;
+	h2{
+		float: left;
+		padding: 12px 0px 0px 5px;
+		text-transform: uppercase;
+		color: white;
+		font-size: 18px;
+		@media(min-width: 500px){
+		font-size: 24px;
+		padding: 10px 0 0 40px;
+		}
+	}
+}
+
+.large-nav{
+	display: none;
+	visibility: 0;
+	opacity: 0;
+	
+}
+.burger-nav{
+	display: none;
+	visibility: 0;
+	opacity: 0;
+}
+.burger-nav.show{
+	visibility: 1;
+	opacity: 1;
+	display: block;
+	text-align: center;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 30;
+	padding-top: 100px;
+	background-color: rgba(96, 96, 96, 0.9);
+	li{
+		margin: 30px;
+		text-transform: uppercase;
+		a{
+			
+			&:hover{
+				color: $font-color;
+			}
+		}
+	}
+	
+}
+
+
+
+
+
+
+@media (min-width: 750px){
+	.navigation{
+		padding: 10px 40px;
+		h2{
+			padding: 0;
+		}
+	}
+.large-nav{
+	display: block;
+	padding-top: 4px;
+	visibility: 1;
+	opacity: 1;
+		float: right;
+		li{
+			color: white;
+			float: left;
+			text-transform: uppercase;
+			padding-left: 30px;
+			a{
+				color: white;
+			}
+		}
+	
+}
+.burger-nav{
+	display: none;
+}
+
+}
+footer, .footer{
+	background-color: $primary;
+	padding: 50px;
+	width: 100%;
+	p{
+		text-align: center;
+	}
+	.foot-left{
+		width: 100%;
+		float: left;
+		padding: 10px;
+		.foot-img{
+			//float: right;
+			display: block;
+			width: 100px;
+			
+			
+		}
+	}
+	.foot-right{
+		width: 100%;
+		float: left;
+		padding: 10px;
+		.copyright{
+			display: block;
+			color: white;
+			p{
+				font-size: 16px;
+			}
+		}
+		.foot-nav{
+			text-align: left;
+			padding-top: 20px;
+				li{
+					a{
+						color: white;
+						text-decoration: none;
+						
+					}
+				}
+			
+		}
+	}
+}
+.copyright{
+	color: white;
+	font-size: 14px;
+	background-color: $primary;
+	padding-bottom: 20px;
+	width: 100%;
+	text-align: center;
+	padding-top: 150px;
+	
+}
+
+
+
+
+
+
+
+
+
