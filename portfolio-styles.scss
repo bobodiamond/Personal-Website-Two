@@ -1,0 +1,91 @@
+.port-hero{
+	padding: 100px 50px;
+	position: relative;
+	p{
+		text-align: center;
+	}
+	.bracket{
+		width: 50px;
+		position: absolute;
+	}
+	.right-bracket{
+		left: 0;
+		bottom: 0;
+		margin: 0 0 20px 20px;
+	}
+	.left-bracket{
+		right: 0;
+		top: 0;
+		margin: 20px 20px 0 0;
+	}
+}
+.portfolio{
+	max-width: 1280px;
+	margin: 0px auto;
+
+.port-piece-half{
+	width: 100%;
+	height: 200px;
+	display: inline-block;
+	float: left;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	@media(min-width: 650px){
+		width: 50%;
+		height: 150px;
+	}
+	@media(min-width: 750px){
+		width: 33.333333%;
+		height: 150px;
+	}
+	@media(min-width: 1250px){
+		width: 25%;
+		height: 190px;
+	}
+}
+.port-one{
+	background-image: url("images/portfolio/am-small.png");
+}
+.port-two{
+	background-image: url("images/portfolio/san-small.png");
+}
+.port-three{
+	background-image: url("images/portfolio/art-small.png");
+}
+.port-four{
+	background-image: url("images/portfolio/cards-small.png");
+}
+.port-five{
+	background-image: url("images/portfolio/rue-small.png");
+}
+.port-six{
+	background-image: url("images/portfolio/banfest-small.png");
+}
+.port-seven{
+	background-image: url("images/portfolio/tes-small.png");
+}
+.port-eight{
+	background-image: url("images/portfolio/dixie-small.png");
+}
+.port-nine{
+	background-image: url("images/portfolio/zem-small.png");
+}
+.port-ten{
+	background-color: $subtle-grey;
+	display: none;
+	@media(min-width: 650px){
+		display: block;
+	}
+	@media(min-width: 750px){
+		display: none;
+	}
+	@media(min-width: 1250px){
+		display: block;
+		width: 75%;
+	}
+}
+}
+.foot-margin{
+	margin-top: 100px;
+}

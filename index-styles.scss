@@ -1,0 +1,256 @@
+.hero{
+	display: block;
+	text-align: center;
+	width: 100%;
+	position: relative;
+	z-index: 10;
+	h1{
+		text-transform: uppercase;
+		padding-bottom: 100px;
+	}
+	.bracket{
+		width: 50px;
+		position: absolute;
+	}
+	.logo{
+		width: 25%;
+		max-width: 250px;
+		display: inline-block;
+		z-index: 10;
+		position: relative;
+		padding: 100px 0 20px 0;
+		
+	}
+	.right-bracket{
+		left: 0;
+		bottom: 0;
+		margin: 0 0 20px 20px;
+	}
+	.left-bracket{
+		right: 0;
+		top: 0;
+		margin: 20px 20px 0 0;
+	}
+}
+.social{
+	display: flex;
+	background-color: $primary;
+	width: 100%;
+	overflow: visible;
+	
+.fb-div{
+	padding: 20px 0;
+	margin: 10px 0px;
+	width: 33.3%;
+	display: inline-block;
+	 background: url(images/fb-icon1.svg) no-repeat 50% 50%;          //fix this thing right here and other pictures
+	background-size: contain;
+	-webkit-filter: grayscale(100%) brightness(10) brightness(100%);
+			filter: grayscale(100%) brightness(10) brightness(100%);
+	
+	@media (min-width: 530px){
+		padding: 13px 0px;
+		background: url(images/fb-grey.svg) no-repeat 50% 50%;
+	}
+	&:hover{
+			-webkit-filter: grayscale(100%) brightness(10) brightness(86%);
+			filter: grayscale(100%) brightness(10) brightness(86%);
+		}
+	}
+	
+	.tum-div{
+		@extend .fb-div;
+		background-image: url("images/tum-icon1.svg");
+		@media (min-width: 530px){
+		background: url(images/tum-grey.svg) no-repeat 50% 50%;
+	}
+	}
+	.link-div{
+		
+		@extend .fb-div;
+		background-image: url("images/link-icon1.svg");
+		@media (min-width: 530px){
+		background: url(images/link-grey.svg) no-repeat 50% 50%;
+	}
+	}
+	
+	
+}
+.about-me{
+	display: block;
+	text-align: center;
+	padding: 50px 20px;
+	@media (min-width: 700px){
+		padding: 100px 50px;
+	}
+	h1{
+		padding-bottom: 25px;
+	}
+}
+.whats-new{
+	text-align: center;
+	background-color: $secondary;
+	padding-bottom: 50px;
+	position: relative;
+	h1{
+		color: white;
+		font-weight: 300;
+		padding: 50px 0;
+	}
+	
+	.click-button{
+		background-color: transparent; /* Green */
+		//border: 1px solid $secondary;
+		border: none;
+		color: $primary;
+		padding: 10px 15px;
+		text-align: center;
+		text-decoration: none;
+		display: inline-block;
+		font-size: 30px;
+		position: absolute;
+		margin-top: 175px;
+		//margin-top: 275px;
+		top: 0;
+		//@media(min-width: 950px){
+			//margin-top: 175px;
+		//}
+	}
+	.left{
+		left: 0;
+		border-left: none
+		
+	}
+	.right{
+		right: 0;
+		border-right: none;
+	}
+}
+.slider{
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	width: 90%;
+	height: 600px;
+	overflow: hidden;
+	@media (min-width: 950px){
+				height: 400px;
+			}
+	.mySlides{
+		height: 600px;
+		width: 100%;
+		@media (min-width: 950px){
+				height: 400px;
+			}
+	}
+	.slide-one{
+		padding: 50px 20px;
+		margin: 0;
+		overflow: hidden;
+		position: relative;
+		background-color: white;
+		height: 600px;
+		@media (min-width: 950px){
+			height: 400px;
+			padding: 20px 50px;
+			}
+		.slide-one-left{
+			float: left;
+			width: 100%;
+			padding: 0;
+			@media (min-width: 950px){
+				width: 50%;
+				padding: 60px 0px 0 30px;
+			}
+			h2{
+				padding-bottom: 40px;
+				font-weight: 600;
+			}
+			img{
+				width: 200px;
+				@media(min-width: 380px){
+					width: 300px;
+				}
+			}
+		}
+		
+		.slide-one-right{
+			float: left;
+			width: 100%;
+			padding: 0;
+			@media (min-width: 950px){
+				padding: 30px 50px 0 50px;
+				width: 50%;
+			}
+			p{
+				text-align: center;
+				padding-top: 50px;
+			}
+			.clickme{
+				padding: 5px 20px;
+				text-transform: uppercase;
+				border: none;
+				font-family: inherit;
+				color: white;
+				background-color: $primary;
+				font-size: 20px;
+				margin-top: 20px;
+				&:hover{
+					background-color: $secondary;
+				}
+			}
+		}
+	}
+	.slide-two, .slide-three{
+		padding: 50px 100px;
+		margin: 0;
+		overflow: hidden;
+		position: relative;
+		background-color: white;
+		height: 600px;
+		background-image: url("images/outdoor-bg.jpg");
+		background-position: center center;
+		background-size: cover;
+		@media (min-width: 950px){
+			height: 400px;
+			padding: 20px 50px;
+			}
+		.outdoors{
+			width: 80%;
+			 position: absolute;
+			 top: 50%;
+			 left: 50%;
+			 transform: translate(-50%, -50%);
+			 h2{
+				 font-weight: 600;
+			 }
+			p{
+				font-size: 16px;
+				font-weight: 400;
+				@media (min-width: 415px){
+					font-size: 18px;
+				}
+			}
+		}
+	}
+	.slide-three{
+		background-image: none;
+	}
+	.slide-four{
+		background-color: orange;
+		@media (min-width: 950px){
+			height: 400px;
+			padding: 20px 50px;
+			}
+	}
+}
+
+
+
+
+
+
+
+
+
+
