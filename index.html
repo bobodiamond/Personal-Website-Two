@@ -8,7 +8,8 @@
 	</title>
 	<link href="app.css" media="all" rel="stylesheet" type="text/css">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link href="https://fonts.googleapis.com/css?family=Exo+2:100,300,600" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:100,300,400,600" rel="stylesheet">
 	<script>
 	       var slideIndex = 1;
 	           showDivs(slideIndex);
@@ -27,7 +28,36 @@
 	       }
 	       x[slideIndex-1].style.display = "block";  
 	       }
-	</script>
+	 </script>      
+	       
+	       <script type="text/javascript">
+	       $(function() {
+	$(".hamburger").click(function() {
+		$(".burger-nav").addClass("show");
+	});
+	$(".ex").click(function() {
+		$(".burger-nav").removeClass("show");
+	});
+});
+$(document).ready(function() {
+	$(".fancybox").fancybox();
+});
+$(document).ready(function() {
+	$("a#contact").on('click', function(event) {
+		if (this.hash !== "") {
+			event.preventDefault();
+			var hash = this.hash;
+			$('html, body').animate({
+				scrollTop: $(hash).offset().top
+			}, 800, function() {
+				window.location.hash = hash;
+			});
+		}
+	});
+});
+	       </script>
+	       
+	
 </head>
 
 <body>
@@ -37,17 +67,17 @@
 
 		<div class="navigation">
 			<h2 class="my-name">brandon diamond</h2>
-
+			<img class="hamburger" src="images/hamburger.png">
 
 			<nav class="large-nav">
 				<ul>
 					<li>
-						<a href="/">home</a>
+						<a href="index.html">home</a>
 					</li>
 
 
 					<li>
-						<a href="/">portfolio</a>
+						<a href="portfolio.html">portfolio</a>
 					</li>
 
 
@@ -57,21 +87,24 @@
 
 
 					<li>
-						<a href="/">contact</a>
+						<a id="contact" href="#footer">contact</a>
 					</li>
 				</ul>
 			</nav>
 
 
 			<nav class="burger-nav">
+				
+					<img class="ex" src="images/ex.png">
+				
 				<ul>
 					<li>
-						<a href="/">home</a>
+						<a href="index.html">home</a>
 					</li>
 
 
 					<li>
-						<a href="/">portfolio</a>
+						<a href="portfolio.html">portfolio</a>
 					</li>
 
 
@@ -81,7 +114,7 @@
 
 
 					<li>
-						<a href="/">contact</a>
+						<a id="contact" href="#footer">contact</a>
 					</li>
 				</ul>
 			</nav>
@@ -109,39 +142,47 @@
 
 
 		<section class="about-me">
-			<h1>Hello, welcome here!</h1>
+			<h1>Hello and welcome!</h1>
 
 
-			<p>I am glad you landed on my page. I am a web developer and graphic designer. After a few years of learning about design and designers, I became one! Now people study what I do and soon will be studied themselves. I am passionate about building websites and designing logos. I also enjoy things like climbing tall rocks, road trips, and wicked good music. To enjoy any of these things with me, or just chat about conspiracy theories, click on the connect button, yo!</p>
+			<p>I am glad you landed on my page. I am a web developer and graphic designer. After a few years of learning about design and designers, I became one! Now people study what I do and soon will be studied themselves. I am passionate about building websites and designing logos. I also enjoy things like climbing tall rocks, road trips, and wicked good music. To enjoy any of these things with me, or just chat about conspiracy theories, please hit the contact button!</p>
 		</section>
 		<!--end of main paragraph-->
 		<!--Start of Whats New-->
 
 
 		<section class="whats-new">
-			<h1>Whats New?</h1>
+			<h1>About Me.</h1>
 
 
 			<div class="slider">
 				<div class="mySlides slide-one">
 					<div class="slide-one-left">
-					<h2>Wanna see my process?</h2>
+					<h2>my process</h2>
 					<img alt="" src="images/computer-one.jpg">
 					</div>
 
 
 					<div class="slide-one-right">
 						<p>Take an inside look into how I put my website together. I take great pride in my work and I’d like to share with you! Click this button to see!</p>
-						<a><button class="clickme">MY PROCESS</button></a>
+						<a><button href="myprocess.html" class="clickme">MY PROCESS</button></a>
 					</div>
 				</div>
 
 
 				<div class="mySlides slide-two">
+					<div class="outdoors">
+					<h2>me.</h2>
+					<p>Nothing is better to me than turning off my phone, putting on my adventure clothes, and going out to where no one can find me. I enjoy taking the road less traveled. I take this very literally when I go on adventures. I like to pave my own trail and get lost in the wilderness. My dream is to travel the United States and adventure to all the places that no one else will. All I need is my water bottle, my knife and my play shoes. Then it's time to have fun!</p>
+					</div>
 				</div>
 
 
 				<div class="mySlides slide-three">
+					<div class="outdoors">
+					<h2>my skills.</h2>
+					<p>My capabilities span further than what you see on my site. I am great at graphic design and web development. I also have photography skills, illustration skills, people skills, and other weird things you probably arent interested in. I love learning new things. I am in the process of learning Spanish. I cannot wait to add that to my arsenal!</p>
+					</div>
 				</div>
 
 
@@ -152,7 +193,7 @@
 			<!--End of Whats New-->
 
 		</section>
-			<footer class="footer">
+			<footer class="footer" id="footer">
 				<div class="foot-left"><img class="foot-img" src="images/me.jpg">
 				</div>
 
@@ -160,7 +201,7 @@
 				<div class="foot-right">
 					<ul class="foot-nav">
 						<li>
-							<a href="/">PORTFOLIO</a>
+							<a href="portfolio.html">PORTFOLIO</a>
 						</li>
 
 
@@ -169,9 +210,7 @@
 						</li>
 
 
-						<li>
-							<a href="/">CONTACT</a>
-						</li>
+						<br>
 
 
 						<li>
@@ -193,22 +232,4 @@
 	</section>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

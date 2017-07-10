@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>
+	</title>
+	<link href="app.css" media="all" rel="stylesheet" type="text/css">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:100,300,600" rel="stylesheet">
+	<script>
+	       var slideIndex = 1;
+	           showDivs(slideIndex);
+
+	       function plusDivs(n) {
+	           showDivs(slideIndex += n);
+	       }
+
+	       function showDivs(n) {
+	           var i;
+	           var x = document.getElementsByClassName("mySlides");
+	           if (n > x.length) {slideIndex = 1}    
+	           if (n < 1) {slideIndex = x.length}
+	           for (i = 0; i < x.length; i++) {
+	           x[i].style.display = "none";  
+	       }
+	       x[slideIndex-1].style.display = "block";  
+	       }
+	</script>
+</head>
+
+<body>
+	<section class="index-wrapper">
+		<!--Navigation-->
+
+
+		<div class="navigation">
+			<h2 class="my-name">brandon diamond</h2>
+			
+
+			<nav class="large-nav">
+				<ul>
+					<li>
+						<a href="/">home</a>
+					</li>
+
+
+					<li>
+						<a href="/">portfolio</a>
+					</li>
+
+
+					<li>
+						<a href="/">resume</a>
+					</li>
+
+
+					<li>
+						<a href="/">contact</a>
+					</li>
+				</ul>
+			</nav>
+
+		</div>
+			<nav class="burger-nav">
+				<ul>
+					<li>
+						<a href="/">home</a>
+					</li>
+
+
+					<li>
+						<a href="/">portfolio</a>
+					</li>
+
+
+					<li>
+						<a href="/">resume</a>
+					</li>
+
+
+					<li>
+						<a href="/">contact</a>
+					</li>
+				</ul>
+			</nav>
+		
+		<!--End of Navigation-->
+		
+			<footer class="footer">
+				<div class="foot-left"><img class="foot-img" src="images/me.jpg">
+				</div>
+
+		
+				<div class="foot-right">
+					<ul class="foot-nav">
+						<li>
+							<a href="/">PORTFOLIO</a>
+						</li>
+
+
+						<li>
+							<a href="/">RESUME</a>
+						</li>
+
+
+						<li>
+							<a href="/">CONTACT</a>
+						</li>
+
+
+						<li>
+							<a href="/">P: 740-785-0069</a>
+						</li>
+
+
+						<li>
+							<a href="/">E: brand.n.diamond@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+
+				
+			</footer>
+			<div class="copyright">
+			<p>© 2017 Brandon Diamond</p>
+			</div>
+	</section>
+</body>
+</html>

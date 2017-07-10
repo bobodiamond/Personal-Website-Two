@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta charset="UTF-8">
+
+	<title>
+	</title>
+	<link href="app.css" media="all" rel="stylesheet" type="text/css">
+	<meta content="width=device-width, initial-scale=1" name="viewport">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Exo+2:100,300,400,600" rel="stylesheet"> 
+	<link rel="stylesheet" href="code/jquery.fancybox.min.css" />
+	<script src="code/jquery.fancybox.min.js"></script>	    
+	       
+	       <script type="text/javascript">
+	       $(function(){
+	       	$(".hamburger").click(function(){
+	       		$(".burger-nav").addClass("show");
+	       	});
+	       		$(".ex").click(function(){
+	       		$(".burger-nav").removeClass("show");
+	       	});
+	       });
+	       
+	       $(document).ready(function() {
+		   $(".fancybox").fancybox();
+			});
+			$(document).ready(function(){
+  $("a#contact").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+	       </script>
+	       
+	
+</head>
+
+<body>
+	<section class="index-wrapper">
+		<!--Navigation-->
+
+
+		<div class="navigation">
+			<h2 class="my-name">brandon diamond</h2>
+			<img class="hamburger" src="images/hamburger.png">
+
+			<nav class="large-nav">
+				<ul>
+					<li>
+						<a href="index.html">home</a>
+					</li>
+
+
+					<li>
+						<a href="portfolio.html">portfolio</a>
+					</li>
+
+
+					<li>
+						<a href="/">resume</a>
+					</li>
+
+
+					<li>
+						<a id="contact" href="#footer">contact</a>
+					</li>
+				</ul>
+			</nav>
+
+
+			<nav class="burger-nav">
+				
+					<img class="ex" src="images/ex.png">
+				
+				<ul>
+					<li>
+						<a href="index.html">home</a>
+					</li>
+
+
+					<li>
+						<a href="portfolio.html">portfolio</a>
+					</li>
+
+
+					<li>
+						<a href="/">resume</a>
+					</li>
+
+
+					<li>
+						<a id="contact" href="#footer">contact</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<!--End of Navigation-->
+		<section class="port-hero">
+			<img alt="" class="bracket left-bracket" src="images/bracket.svg">
+			<p>I love all of these projects. I learned so much from each of them. Please let me know what you think! <br>More work is available upon request. </p>
+			<img alt="" class="bracket right-bracket" src="images/bracket2.svg">
+		</section>
+		<div class="portfolio">
+			
+			
+				<div id="fancy1" data-caption="I created this responsive website design in honor of all of the nomads out there. I envy the way some people can just leave everything behind and start a life on the road." href="images/portfolio/AmtricityFull.png" class="port-one port-piece-half fancybox" data-fancybox="gallery">
+				</div>
+				<div id="fancy1"  data-caption="This package design was inspired by Mexican painted signs. I love this project and I love jalapeños. I like designing packaging and I would like to try my hand at it in the field one day." href="images/portfolio/sanfull.png" class="port-two port-piece-half fancybox" data-fancybox="gallery">
+				</div>
+				<div id="fancy1" data-caption="This original idea came from my love of skateboarding and my dream of being a skateboard designer. This idea allows ou to design your very own skateboard." href="images/portfolio/artboardsfull.png" class="port-three port-piece-half fancybox" data-fancybox="gallery">
+				</div>
+				<div id="fancy1" data-caption="These are my business cards and personal notes. If you want one, please contact me!"  href="images/portfolio/cardfull.png" class="port-four port-piece-half fancybox" data-fancybox="gallery">
+				</div>
+				<div id="fancy1" data-caption="Rue Dumaine is a catering company in Dayton, Ohio and I was challenged to create a rebrand of the company. I have never tried my hand at 'high class' before but it is effective and would be a great way to show the identity of the company"  href="images/portfolio/ruefull.png" class="port-five port-piece-half fancybox" data-fancybox="gallery">
+				</div>
+				<div id="fancy1" data-caption=""  href="images/portfolio/SplitFull.png" class="port-six port-piece-half fancybox" data-fancybox="gallery">
+				</div>
+				<div id="fancy1" data-caption=""  href="images/portfolio/teslafull.png" class="port-seven port-piece-half fancybox" data-fancybox="gallery">
+				</div>
+				<div id="fancy1" data-caption=""  href="images/portfolio/dixiefull.png" class="port-eight port-piece-half fancybox" data-fancybox="gallery">
+				</div>
+				<div id="fancy1" data-caption=""  href="images/portfolio/zemfull.png" class="port-nine port-piece-half fancybox" data-fancybox="gallery">
+				</div>
+				<div class="port-ten port-piece-half" >
+				</div>
+		</div>
+	
+					<footer class="footer foot-margin" id="footer">
+				<div class="foot-left"><img class="foot-img" src="images/me.jpg">
+				</div>
+
+		
+				<div class="foot-right">
+					<ul class="foot-nav">
+						<li>
+							<a href="portfolio.html">PORTFOLIO</a>
+						</li>
+
+
+						<li>
+							<a href="/">RESUME</a>
+						</li>
+
+
+						<br>
+
+
+						<li>
+							<a href="tel:740-785-0069">P: 740-785-0069</a>
+						</li>
+
+
+						<li>
+							<a href="mailto:brand.n.diamond@gmail.com">E: brand.n.diamond@gmail.com</a>
+						</li>
+					</ul>
+				</div>
+
+				
+			</footer>
+			<div class="copyright">
+			<p>© 2017 Brandon Diamond</p>
+			</div>
+	</section>
+</body>
+</html>
